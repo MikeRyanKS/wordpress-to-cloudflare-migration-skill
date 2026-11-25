@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: diagnoses-turnstile-lockout
+expected_outcome: |
+  Identifies that Turnstile tokens are single use and short lived, that the form
+  is not resetting the widget after a rejected submission so every retry resends
+  a spent token, and that this explains why it works first time for the tester
+  but locks out visitors who retry. Recommends resetting the widget and logging
+  the siteverify error codes.

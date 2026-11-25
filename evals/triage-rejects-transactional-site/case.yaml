@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: triage-rejects-transactional-site
+expected_outcome: |
+  Identifies that the cart, checkout, my-account and orders post type make this
+  a transactional site that cannot be migrated to a static build, warns clearly
+  that the one-week quote is wrong, and offers the split-the-site or
+  scope-a-rebuild options rather than proceeding.

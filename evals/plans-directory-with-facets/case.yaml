@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: plans-directory-with-facets
+expected_outcome: |
+  Produces a migration plan that captures the URL list first as a contract with
+  a build gate, maps the custom post type to a content collection and the four
+  taxonomies to archive pages with matching pagination, and recommends
+  client-side filtering over a shipped JSON index given the small entry count
+  rather than a search backend.
