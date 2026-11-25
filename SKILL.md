@@ -197,9 +197,17 @@ prove bots are blocked. Only a person can prove people aren't.
 ## Step 7 — The site must ship with its documentation
 
 A migrated site that only you understand is a liability. `references/handover.md`
-specifies the docs set every migration produces — what the site is, where
-everything lives, how to change it, and the traps. Write it as you go, in the
-repo, not afterwards from memory.
+specifies the docs set every migration produces — what the site is, how its pages
+connect, where everything lives, how to change it, and the traps. Write it as you
+go, in the repo, not afterwards from memory.
+
+Two of those files are the ones people skip and then wish they had: a page graph
+showing how the routes and the form flow actually fit together, and a
+`decisions.md` recording everything that looks wrong without context.
+
+That reference also covers the four generated machine-readable files — sitemap,
+RSS, `robots.txt` and `/llms.txt` for AI crawlers. Carry over and verify any the
+old site had; create the ones it didn't.
 
 Commit messages are part of this. When something behaved surprisingly, record
 why in the commit that fixes it — that is where the next person looks.
